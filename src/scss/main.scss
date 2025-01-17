@@ -1,0 +1,17 @@
+// базовые подключения
+@use "vars";
+@use "mixins";
+@use "fonts";
+@use "settings";
+
+// подключения компонентов страницы
+@use "./components/header";
+@use "./components/hero";
+@use "./components/services";
+@use "./components/form";
+@use "./components/pay";
+@use "./components/about";
+@use "./components/contacts";
+@use "./components/footer";
+@use "./components/catalog";
+@use "./components/stocs";

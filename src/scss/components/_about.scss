@@ -1,0 +1,44 @@
+.about {
+  margin-bottom: 170px;
+
+  &__list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__item {
+    max-width: 285px;
+    background-image: url(../img/about-bg.webp);
+    background-size: cover;
+
+    img {
+      height: 197px;
+      margin-bottom: 23px;
+      border-bottom: 3px solid #cf0953;
+    }
+  }
+
+  &__inner {
+    padding: 0 14px 28px 14px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #242c3c;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #6a7181;
+  }
+}

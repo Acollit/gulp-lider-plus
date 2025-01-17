@@ -1,0 +1,80 @@
+.footer {
+  padding: 60px 0;
+  background: #2c2b2b;
+
+  &__content {
+    display: flex;
+  }
+
+  &__logo {
+    max-width: 300px;
+    margin-right: 105px;
+  }
+
+  &__logo-title {
+    display: block;
+    margin: 0;
+    margin-bottom: 17px;
+    font-family: var(--font4);
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+
+  &__logo-text {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #fff;
+  }
+
+  &__contacts {
+    margin-right: 200px;
+    max-width: 195px;
+    width: 100%;
+  }
+
+  &__contacts-link {
+    display: block;
+    margin-bottom: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #fff;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 22px;
+    background: #fff450;
+    border-radius: 4px;
+    padding: 13px 30px;
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+    color: #2c2b2b;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__link {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+    opacity: 0.8;
+  }
+}

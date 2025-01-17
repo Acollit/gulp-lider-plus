@@ -1,0 +1,143 @@
+.hero {
+  margin-bottom: 80px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+  }
+
+  &__inner {
+    background: #f7f7f9;
+  }
+
+  &__title {
+    padding: 0 5px;
+    margin: 39px 0 20px 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #242c3c;
+
+    span {
+      color: #cf0953;
+    }
+  }
+
+  &__descr {
+    padding: 0 5px;
+    max-width: 420px;
+    margin: 0;
+    margin-bottom: 42px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #6a7181;
+  }
+
+  &__form {
+    padding: 45px 25px 46px 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 458px;
+    background-image: url(../img/hero-bg.svg);
+    background-size: cover;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+
+  &__input {
+    outline: none;
+    display: block;
+    padding: 11px 15px;
+    margin-bottom: 16px;
+    background: #f9fbff;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #242c3c;
+  }
+
+  &__span {
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: center;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: #6a7181;
+  }
+
+  &__link {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: #6a7181;
+  }
+
+  &__btn {
+    padding: 11px 15px;
+    background: #cf0953;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #242c3c;
+    position: relative;
+
+    &:not(:last-child) {
+      &::after{
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 1px;
+        background-color: #e5eaf3;
+        right: -50px;
+      }
+    }
+
+    &:nth-child(1) {
+      max-width: 230px;
+    }
+
+    &:nth-child(2) {
+      max-width: 170px;
+    }
+
+    &:nth-child(3) {
+      max-width: 266px;
+    }
+
+    &:nth-child(4) {
+      max-width: 200px;
+    }
+  }
+}

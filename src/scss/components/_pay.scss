@@ -1,0 +1,29 @@
+.pay {
+  margin-bottom: 88px;
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  &__item {
+    max-width: 280px;
+    width: 100%;
+    padding: 40px 15px 72px 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 110%;
+    color: #000;
+    background-image: url(../img/pay-bg.webp);
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
