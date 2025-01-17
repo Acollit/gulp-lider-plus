@@ -1,0 +1,54 @@
+.feedbeack {
+  margin-bottom: 100px;
+
+  &__swiper {
+    max-width: 945px;
+    margin: 0 auto;
+    margin-top: 46px;
+    position: relative;
+
+    .swiper-slide {}
+  }
+
+  &__item {
+    display: flex;
+    gap: 66px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 23px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: #111516;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: #898989;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__prev {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__next {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

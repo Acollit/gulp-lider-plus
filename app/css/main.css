@@ -1077,4 +1077,56 @@ a {
   right: 20px;
   bottom: 40px;
   background-image: url(../img/stocs-3.webp);
+}
+
+.feedbeack {
+  margin-bottom: 100px;
+}
+.feedbeack__swiper {
+  max-width: 945px;
+  margin: 0 auto;
+  margin-top: 46px;
+  position: relative;
+}
+.feedbeack__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 66px;
+}
+.feedbeack__name {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  color: #111516;
+}
+.feedbeack__text {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #898989;
+}
+.feedbeack__wrapper {
+  position: relative;
+}
+.feedbeack__prev {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.feedbeack__next {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }/*# sourceMappingURL=main.css.map */

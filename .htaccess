@@ -1,9 +1,0 @@
-# Включение модуля rewrite
-RewriteEngine On
-
-# Убедитесь, что запрос не относится к существующему файлу или директории
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Удаление .html из URL
-RewriteRule ^(.*)$ $1.html [L]
