@@ -14,12 +14,19 @@
     width: 100%;
     transition: all .3s ease-in-out;
 
+
     img {
       height: 234px;
       display: block;
       margin: 0 auto;
       margin-top: 20px;
-      margin-bottom: 9px;
+      margin-bottom: 14px;
+    }
+
+    &--type {
+      img {
+        height: 128px;
+      }
     }
 
     &:hover {
@@ -44,6 +51,13 @@
 
   &__inner {
     padding: 0 22px;
+
+    &--accent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 307px;
+    }
 
   }
 
@@ -96,5 +110,38 @@
     color: #fff;
     background: #3d4f64;
     transition: all .3s ease-in-out;
+  }
+}
+
+
+.tabs {
+  &__nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+  }
+
+  &__nav-btn {
+    padding: 5px 15px;
+    background: #f9f9f9;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    color: #000;
+    transition: all .3s ease-in-out;
+
+    &--active {
+      background: #fffcd0;
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
   }
 }

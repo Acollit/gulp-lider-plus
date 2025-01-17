@@ -18,6 +18,8 @@
       background-image: url(../img/form-img-1.webp);
     }
 
+
+
     &--window {
       &::before {
         width: 554px;
@@ -34,6 +36,10 @@
     max-width: 525px;
     margin: 0 auto;
     margin-right: 0;
+
+    &--accent {
+      max-width: 575px;
+    }
 
   }
 
@@ -52,16 +58,38 @@
       margin-bottom: 69px;
     }
 
+    &--door {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 38px;
+      color: #2f2f51;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
     span {
 
       font-size: 38px;
     }
   }
 
+  &__descr {
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #2f2f51;
+  }
+
   &__inner {
     max-width: 430px;
     width: 100%;
     margin: 0 auto;
+
+    &--accent {
+      margin-left: 11px;
+    }
   }
 
   &__input {
@@ -163,6 +191,10 @@
     font-weight: 700;
     font-size: 16px;
     color: #fff;
+
+    &--accent {
+      margin-left: 70px;
+    }
   }
 
   &__time {
@@ -170,5 +202,12 @@
     display: flex;
     gap: 25px;
     margin-bottom: 35px;
+  }
+
+  &__select {
+    cursor: pointer;
+    background-image: url(../img/select.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px top 24px;
   }
 }
