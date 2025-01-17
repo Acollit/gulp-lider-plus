@@ -1,6 +1,7 @@
 .header {
   position: relative;
   z-index: 3;
+
   &__content {
     display: flex;
     align-items: center;
@@ -93,6 +94,10 @@
     text-transform: uppercase;
     color: #3a3a3a;
     transition: all .3s ease-in-out;
+
+    &--accent {
+      color: #cf0953;
+    }
 
     &:hover {
       color: #cf0953;

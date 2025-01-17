@@ -46,3 +46,20 @@ function ensureMapVisibility(map) {
     map.container.fitToViewport(); // Корректировка размеров карты
   }, 100); // Небольшая задержка для обеспечения доступности контейнера
 }
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.header__link');
+  const currentUrl = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentUrl) {
+      link.classList.add('header__link--accent');
+    }
+  });
+});

@@ -326,6 +326,9 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.header__link--accent {
+  color: #cf0953;
+}
 .header__link:hover {
   color: #cf0953;
 }
