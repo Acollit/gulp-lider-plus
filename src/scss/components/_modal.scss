@@ -1,0 +1,68 @@
+.graph-modal {
+  &__container {
+    width: 500px;
+    padding: 20px;
+    background-image: url(../img/hero-bg.svg);
+    background-size: cover;
+  }
+
+  &__content {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+  }
+
+  &__input {
+    width: 100%;
+    outline: none;
+    display: block;
+    padding: 11px 15px;
+    margin-bottom: 16px;
+    background: #f9fbff;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #242c3c;
+  }
+
+  &__span {
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: center;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: #6a7181;
+  }
+
+  &__link {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: #6a7181;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 11px 15px;
+    background: #cf0953;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+}

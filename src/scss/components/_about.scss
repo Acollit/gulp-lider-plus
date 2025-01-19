@@ -1,11 +1,22 @@
 .about {
   margin-bottom: 170px;
 
+  @include tablet {
+    margin-bottom: 80px;
+  }
+
   &__list {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 10px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 40px;
+    }
   }
 
   &__item {
@@ -13,10 +24,22 @@
     background-image: url(../img/about-bg.webp);
     background-size: cover;
 
+    @include tablet {
+      max-width: 500px;
+      width: 100%;
+      background-color: #e8e8e8;
+      background-image: none;
+    }
+
     img {
       height: 197px;
       margin-bottom: 23px;
       border-bottom: 3px solid #cf0953;
+
+      @include tablet {
+        width: 100%;
+        height: 220px;
+      }
     }
   }
 
@@ -29,7 +52,7 @@
     margin-bottom: 15px;
     font-family: var(--third-family);
     font-weight: 600;
-    font-size: 24px;
+    @include fluid-text(24, 20);
     text-transform: uppercase;
     color: #242c3c;
   }
@@ -38,7 +61,7 @@
     margin: 0;
     font-family: var(--third-family);
     font-weight: 400;
-    font-size: 16px;
+    @include fluid-text(16, 14);
     color: #6a7181;
   }
 }

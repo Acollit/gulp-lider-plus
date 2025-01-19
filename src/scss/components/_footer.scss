@@ -2,13 +2,28 @@
   padding: 60px 0;
   background: #2c2b2b;
 
+  @include tablet {
+    padding: 40px 0;
+  }
+
   &__content {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__logo {
     max-width: 300px;
     margin-right: 105px;
+    order: 0;
+
+    @include tablet {
+      max-width: 500px;
+      width: 100%;
+    }
   }
 
   &__logo-title {
@@ -17,10 +32,14 @@
     margin-bottom: 17px;
     font-family: var(--font4);
     font-weight: 900;
-    font-size: 36px;
+    @include fluid-text(36, 30);
     line-height: 110%;
     letter-spacing: 0.02em;
     color: #fff;
+
+    @include tablet {
+      text-align: center;
+    }
   }
 
   &__logo-text {
@@ -31,12 +50,28 @@
     font-size: 14px;
     line-height: 110%;
     color: #fff;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
   }
 
   &__contacts {
     margin-right: 200px;
     max-width: 195px;
     width: 100%;
+
+    @include tablet {
+      order: 1;
+      margin: 0;
+      max-width: 500px;
+    }
+
   }
 
   &__contacts-link {
@@ -47,6 +82,11 @@
     font-size: 14px;
     line-height: 110%;
     color: #fff;
+
+    @include tablet {
+      text-align: center;
+    }
+
   }
 
   &__btn {
@@ -61,12 +101,20 @@
     line-height: 110%;
     text-align: center;
     color: #2c2b2b;
+
+    @include tablet {
+      margin: 0 auto;
+    }
   }
 
   &__nav {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include tablet {
+      align-items: center;
+    }
   }
 
   &__link {

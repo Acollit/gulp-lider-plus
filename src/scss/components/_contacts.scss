@@ -4,6 +4,11 @@
     height: 565px;
     width: 100%;
     position: relative;
+
+    @include tablet {
+      margin-top: 40px;
+      height: 465px;
+    }
   }
 
   &__inner {
@@ -16,6 +21,12 @@
     display: block;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15);
     background: #fff;
+
+    @include tablet {
+      height: auto;
+      padding: 30px;
+
+    }
   }
 
   &__subtitle {

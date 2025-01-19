@@ -23,6 +23,10 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: #cf0953;
+
+    @include small-tablet{
+      font-size: 24px;
+    }
   }
 
   &__logo-text {
@@ -32,12 +36,20 @@
     font-weight: 300;
     font-size: 12px;
     color: #3a3a3a;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__select {
     display: flex;
     gap: 10px;
     align-items: center;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__select-item {
@@ -54,6 +66,12 @@
     font-size: 24px;
     text-align: right;
     color: #3a3a3a;
+  }
+
+  &__box {
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__box-text {
@@ -77,6 +95,10 @@
     padding: 16px 0;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #fff450;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__list {
@@ -104,7 +126,28 @@
     }
   }
 
+  &__wrapper {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
   &__btn {
     cursor: pointer;
   }
+}
+
+
+.burger {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include burger;
 }

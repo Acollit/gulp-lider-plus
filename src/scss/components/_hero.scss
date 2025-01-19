@@ -1,13 +1,36 @@
 .hero {
   margin-bottom: 80px;
+
+  @include tablet {
+    background: #f7f7f9;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 54px;
+    background: #f7f7f9;
+
+    @include tablet {
+      align-items: flex-end;
+      margin-bottom: 30px;
+    }
+
+    img {
+      @include tablet {
+        display: none;
+      }
+    }
   }
 
   &__inner {
-    background: #f7f7f9;
+
+    @include tablet {
+      max-width: 500px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -15,13 +38,17 @@
     margin: 39px 0 20px 0;
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 36px;
+    @include fluid-text(36, 24);
     line-height: 130%;
     text-transform: uppercase;
     color: #242c3c;
 
     span {
       color: #cf0953;
+    }
+
+    @include tablet {
+      text-align: center;
     }
   }
 
@@ -32,8 +59,13 @@
     margin-bottom: 42px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
+    @include fluid-text(16, 14);
     color: #6a7181;
+
+    @include tablet {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -43,6 +75,10 @@
     max-width: 458px;
     background-image: url(../img/hero-bg.svg);
     background-size: cover;
+
+    @include tablet {
+      padding: 25px 15px;
+    }
   }
 
   &__subtitle {
@@ -50,10 +86,15 @@
     margin-bottom: 40px;
     font-family: var(--third-family);
     font-weight: 600;
-    font-size: 24px;
+    @include fluid-text(24, 20);
     line-height: 130%;
     text-transform: uppercase;
     color: #000;
+
+    @include tablet {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 
 
@@ -65,7 +106,7 @@
     background: #f9fbff;
     font-family: var(--third-family);
     font-weight: 400;
-    font-size: 16px;
+    @include fluid-text(16, 15);
     color: #242c3c;
   }
 
@@ -78,6 +119,7 @@
     font-size: 11px;
     text-align: center;
     color: #6a7181;
+
   }
 
   &__link {
@@ -101,6 +143,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -113,31 +160,61 @@
     color: #242c3c;
     position: relative;
 
+    @include tablet {
+      max-width: 300px;
+      width: 100%;
+    }
+
     &:not(:last-child) {
-      &::after{
+      &::after {
         content: '';
         position: absolute;
         height: 50px;
         width: 1px;
         background-color: #e5eaf3;
         right: -50px;
+
+        @include tablet {
+          display: none;
+        }
       }
+
     }
 
     &:nth-child(1) {
       max-width: 230px;
+
+      @include tablet {
+        max-width: 300px;
+        width: 100%;
+      }
     }
 
     &:nth-child(2) {
       max-width: 170px;
+
+      @include tablet {
+        max-width: 300px;
+        width: 100%;
+      }
     }
 
     &:nth-child(3) {
       max-width: 266px;
+
+      @include tablet {
+        max-width: 300px;
+        width: 100%;
+      }
     }
 
     &:nth-child(4) {
       max-width: 200px;
+
+      @include tablet {
+        max-width: 300px;
+        width: 100%;
+      }
     }
   }
 }

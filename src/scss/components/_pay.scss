@@ -1,11 +1,20 @@
 .pay {
   margin-bottom: 88px;
 
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
   &__list {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     gap: 5px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -14,13 +23,18 @@
     padding: 40px 15px 72px 20px;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 26px;
+    @include fluid-text(26, 22);
     line-height: 110%;
     color: #000;
     background-image: url(../img/pay-bg.webp);
     background-size: cover;
     filter: grayscale(100%);
     transition: all .3s ease-in-out;
+
+    @include tablet {
+      max-width: 500px;
+      padding: 40px 15px 40px 20px;
+    }
 
     &:hover {
       filter: grayscale(0%);
